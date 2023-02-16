@@ -1,0 +1,133 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <h1 id="title"> Josh Test Survey</h1>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+<p id="description"> This is the first survey I am attempting to build. </p>
+<body>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label"> Name 
+        <input id="name" name="name-label" type="text" required placeholder="Josh Roberts">
+      </label>
+      <label id="email-label"> Email 
+        <input id="email" type="email" required placeholder="email@email.com">
+      </label>
+      <label id="number-label"> Number 
+        <input id="number" type="number" pattern="[0-9]" min="1" max="15" placeholder="7">
+      </label>
+    </fieldset>
+    <fieldset>
+    <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="personal"> Personal Account</label>
+    <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="business" /> Business Account</label>
+    </fieldset>
+    <fieldset>
+      <label for="terms-and-conditions">
+        <input id="terms-and-conditions" type="checkbox" value="1" required name="terms-and-conditions" class="inline"> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <label for="Over-18">
+        <input id="Over-18" type="checkbox"  value="2" required name="Over-18" class="inline"> I am over the age of 18
+      </label>
+    </fieldset>
+    <fieldset>
+      <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">freeCodeCamp News</option>
+        <option value="2">freeCodeCamp YouTube Channel</option>
+        <option value="3">freeCodeCamp Forum</option>
+        <option value="4">Other</option>
+      </select>
+    </fieldset>
+    <fieldset> 
+      <textarea placeholder="This is the section where you can write a short piece of text."></textarea>
+    </fieldset>
+    <fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </fieldset>
+  </form>
+</body>
+
+** end of undefined **
+
+** start of undefined **
+
+<style>
+  head { 
+      background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+;
+    color: black;
+  }
+  body {
+      background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+;
+    color: black;
+  }
+  #title {
+    text-align: center;
+  }
+  #description {
+    text-align: center;
+  }
+  #survey-form {
+    margin: 0 auto;
+    width: 600px;
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+;
+    padding: 20px;
+  }
+  #name-label, #email-label, #number-label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input[type="text"], input[type="email"], input[type="number"] {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+  }
+  fieldset {
+    margin-bottom: 20px;
+  }
+  label {
+    font-size: 16px;
+  }
+  input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  select {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  textarea {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    min-width: 300px;
+  }
+  a {
+    color: black;
+  }
+</style>
+
+** end of undefined **
+
